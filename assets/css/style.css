@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+  color: #fff;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 180%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: #b9c6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+main {
+  max-width: 1200px; /* adjust this value as needed */
+  margin: 0 auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-img {
+  margin-right: 20px;
+}
+
+.text-content {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.text-content h3 {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .about h2 {
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project h2 {
+    text-align: center;
+  }
+  .project {
+    flex-direction: column;
+  }
+}
